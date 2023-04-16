@@ -93,3 +93,9 @@
 .slide-left {
   animation: slide-left 0.5s ease-in-out;
 }
+
+@media only screen and (max-width: 767px) {
+  .sea-image {
+    display: none;
+  }
+}
