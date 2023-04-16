@@ -1,0 +1,95 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+}
+
+.login-container {
+  width: 850px;
+  height: 600px;
+  display: flex;
+  font-family: Monospace;
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.5s ease-in-out;
+  h2 {
+    font-weight: 900;
+    font-size: 36px;
+    font-style: Bold;
+    color: #161843;
+  }
+  .login-input-container {
+    background-color: white;
+    padding: 40px;
+  }
+  .login-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .forgot-text {
+      color: #0c6787;
+    }
+    button {
+      background-color: #046586;
+      height: 55px;
+    }
+  }
+  .social-container {
+    display: flex;
+    justify-content: space-around;
+    button {
+      border: 1px solid #cad6e4;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 55px;
+      img {
+        width: 34px;
+        height: 34px;
+        margin-right: 5px;
+      }
+    }
+  }
+  img {
+    height: 600px;
+  }
+}
+
+.move-right {
+  transform: translateX(200%);
+}
+
+.move-left {
+  transform: translateX(-200%);
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation: slide-right 0.5s ease-in-out;
+}
+
+.slide-left {
+  animation: slide-left 0.5s ease-in-out;
+}
